@@ -1,0 +1,11 @@
+camera, microphone, smartphone, 
+realistic, source_filmmaker, 3d, video, source filmmaker, 
+anime, painting, 
+lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name, 
+vector art, cel shading, photography, photography \(artwork\), 
+wings, rear view, 
+kemono, watercolor, chibi, old art, 
+why, wtf, creepypasta, 80s,
+blush, countershading, (multicolored), (multicolored body), (multicolored fur), wings,
+source_pony,
+chubby, gray fur, embedding:boring_sdxl_v1, embedding:unaestheticXL2v10, (shoes)
