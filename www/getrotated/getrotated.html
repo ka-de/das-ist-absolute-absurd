@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Rotation</title>
+<style>
+    html {
+      background: #d8d8d8;
+    }
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+
+<script>
+    // Get the canvas element and its context
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Load the image
+    var img = new Image();
+    img.onload = function() {
+        // Draw the image in the middle of the canvas
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+        ctx.translate(centerX, centerY);
+        animate();
+    };
+    img.src = 'image.png'; // Replace 'image.png' with your image file path
+
+    // Function to rotate the image
+    var angle = 0;
+    function rotateImage() {
+        ctx.clearRect(-canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
+        ctx.rotate(angle * Math.PI / 180);
+        ctx.drawImage(img, -img.width / 2, -img.height / 2);
+        angle += 0.01; // Adjust rotation speed here
+    }
+
+    // Function for animation loop
+    function animate() {
+        rotateImage();
+        requestAnimationFrame(animate);
+    }
+
+</script>
+</body>
+</html>

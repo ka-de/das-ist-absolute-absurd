@@ -1,0 +1,12 @@
+digraph {
+	2472080122960 [label="If(test=Compare(left=Name(id='x', ctx=Load()), ops=[Gt()], comparators=[Constant(value=0)]), body=[Return(value=BinOp(left=Name(id='x', ctx=Load()), op=Mult(), right=Constant(value=2)))], orelse=[If(test=Compare(left=Name(id='x', ctx=Load()), ops=[Lt()], comparators=[Constant(value=0)]), body=[Return(value=UnaryOp(op=USub(), operand=Name(id='x', ctx=Load())))], orelse=[Return(value=Constant(value=0))])])"]
+	2472079753808 [label="Module(body=[FunctionDef(name='example_function', args=arguments(posonlyargs=[], args=[arg(arg='x')], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[If(test=Compare(left=Name(id='x', ctx=Load()), ops=[Gt()], comparators=[Constant(value=0)]), body=[Return(value=BinOp(left=Name(id='x', ctx=Load()), op=Mult(), right=Constant(value=2)))], orelse=[If(test=Compare(left=Name(id='x', ctx=Load()), ops=[Lt()], comparators=[Constant(value=0)]), body=[Return(value=UnaryOp(op=USub(), operand=Name(id='x', ctx=Load())))], orelse=[Return(value=Constant(value=0))])])], decorator_list=[], type_params=[])], type_ignores=[])"]
+	2472080119184 [label="Constant(value=0)"]
+	2472080123152 [label="FunctionDef(name='example_function', args=arguments(posonlyargs=[], args=[arg(arg='x')], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[If(test=Compare(left=Name(id='x', ctx=Load()), ops=[Gt()], comparators=[Constant(value=0)]), body=[Return(value=BinOp(left=Name(id='x', ctx=Load()), op=Mult(), right=Constant(value=2)))], orelse=[If(test=Compare(left=Name(id='x', ctx=Load()), ops=[Lt()], comparators=[Constant(value=0)]), body=[Return(value=UnaryOp(op=USub(), operand=Name(id='x', ctx=Load())))], orelse=[Return(value=Constant(value=0))])])], decorator_list=[], type_params=[])"]
+	2472080119120 [label="Return(value=Constant(value=0))"]
+	2472080118672 [label="If(test=Compare(left=Name(id='x', ctx=Load()), ops=[Lt()], comparators=[Constant(value=0)]), body=[Return(value=UnaryOp(op=USub(), operand=Name(id='x', ctx=Load())))], orelse=[Return(value=Constant(value=0))])"]
+	2472080122960 -> 2472080122704
+	2472080122960 -> 2472080118672
+	2472080118672 -> 2472080119056
+	2472080118672 -> 2472080119120
+}
